@@ -169,7 +169,7 @@
 
   <div id="controls">
     <button class="btn active" id="modeBasic" onclick="setMode('basic')">Base (11)</button>
-    <button class="btn" id="modeExt" onclick="setMode('extended')">Esteso (28)</button>
+    <button class="btn" id="modeExt" onclick="setMode('extended')">Esteso (26)</button>
     <button class="btn ghost" onclick="clearStats()">Azzera</button>
   </div>
 
@@ -190,35 +190,33 @@
    ================================================================ */
 
 var BASIC = [
-  ['#DC2626', 'rosso', 'rosso / rossa'],
-  ['#2563EB', 'blu', 'inv. — always blu'],
-  ['#16A34A', 'verde', 'inv. — verde'],
-  ['#FACC15', 'giallo', 'giallo / gialla'],
-  ['#F97316', 'arancione', 'inv. — arancione'],
+  ['#FF0000', 'rosso', 'rosso / rossa'],
+  ['#0000FF', 'blu', 'inv. — always blu'],
+  ['#3CB043', 'verde', 'inv. — verde'],
+  ['#FFFF00', 'giallo', 'giallo / gialla'],
+  ['#FFA500', 'arancione', 'inv. — arancione'],
   ['#FFFFFF', 'bianco', 'bianco / bianca'],
-  ['#111111', 'nero', 'nero / nera'],
+  ['#000000', 'nero', 'nero / nera'],
   ['#6B7280', 'grigio', 'grigio / grigia'],
-  ['#EC4899', 'rosa', 'inv. — always rosa'],
-  ['#7C3AED', 'viola', 'inv. — always viola'],
-  ['#92400E', 'marrone', 'inv. — marrone']
+  ['#FFC0CB', 'rosa', 'inv. — always rosa'],
+  ['#800080', 'viola', 'inv. — always viola'],
+  ['#964B00', 'marrone', 'inv. — marrone']
 ];
 
 var EXTENDED = BASIC.concat([
-  ['#87CEEB', 'azzurro', 'azzurro / azzurra — light blue, the sky'],
-  ['#1E3A5F', 'blu scuro', 'inv. — dark/navy blue'],
-  ['#60A5FA', 'celeste', 'inv. — sky/pale blue'],
-  ['#14532D', 'verde scuro', 'inv. — dark green'],
+  ['#63C5DA', 'azzurro', 'azzurro / azzurra — light blue, the sky'],
+  ['#000080', 'blu scuro', 'inv. — dark/navy blue'],
+  ['#89CFF0', 'celeste', 'inv. — sky/pale blue'],
+  ['#0B6623', 'verde scuro', 'inv. — dark green'],
   ['#86EFAC', 'verde chiaro', 'inv. — light green'],
-  ['#B91C1C', 'rosso scuro', 'inv. — dark red, bordeaux'],
+  ['#AB0B23', 'rosso scuro', 'inv. — dark red'],
   ['#FCA5A5', 'rosso chiaro', 'inv. — light red / pinkish'],
-  ['#FDE68A', 'giallo chiaro', 'inv. — pale/light yellow'],
-  ['#CA8A04', 'giallo scuro', 'inv. — dark yellow / mustard'],
-  ['#FFD700', 'oro / dorato', 'dorato / dorata — gold'],
+  ['#FFFFA7', 'giallo chiaro', 'inv. — pale/light yellow'],
+  ['#E1AD01', 'giallo scuro', 'inv. — dark yellow / mustard'],
   ['#C0C0C0', 'argento / argentato', 'argentato / argentata — silver'],
   ['#F5F5DC', 'beige', 'inv. — always beige'],
   ['#D2B48C', 'color nocciola', 'inv. — hazelnut / tan'],
   ['#FFF5E1', 'panna / color crema', 'inv. — cream'],
-  ['#800020', 'bordeaux / borgogna', 'inv. — burgundy'],
   ['#008080', 'verde acqua', 'inv. — teal / aqua'],
   ['#4B0082', 'indaco', 'inv. — indigo']
 ]);
